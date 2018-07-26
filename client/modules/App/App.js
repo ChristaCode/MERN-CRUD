@@ -40,8 +40,7 @@ export class App extends Component {
         {this.state.isMounted && !window.devToolsExtension && process.env.NODE_ENV === 'development' && <DevTools />}
         <div>
           <Helmet
-            title="MERN Starter - Blog App"
-            titleTemplate="%s - Blog App"
+            title="App"
             meta={[
               { charset: 'utf-8' },
               {
@@ -72,7 +71,7 @@ export class App extends Component {
 App.propTypes = {
   children: PropTypes.object.isRequired,
   dispatch: PropTypes.func.isRequired,
-  intl: PropTypes.object.isRequired,
+  intl: PropTypes.object.isRequired
 };
 
 // Retrieve data from store as props
